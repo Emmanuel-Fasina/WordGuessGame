@@ -1,43 +1,57 @@
 # Word Guessing Game
 
-A simple word guessing game built with Python and Tkinter. Guess the letters of a hidden word within a limited number of turns to win!
+A Tkinter-based GUI word guessing game where players guess the letters of a randomly selected hidden word within 12 turns, with real-time feedback and win/lose detection.
+
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [How to Play](#how-to-play)
+- [Game Rules](#game-rules)
+- [Project Structure](#project-structure)
+- [License](#license)
+
+## Overview
+Word Guessing Game is a classic hangman-style game: the app randomly selects a hidden word from a predefined list, and the player tries to reveal it one letter at a time before running out of turns.
 
 ## Features
+- 🖥️ Graphical interface built with Tkinter
+- 🎲 Random word selection from a predefined word list
+- ⏳ 12 turns to guess the full word
+- ⚡ Real-time feedback on each guess
+- 🏆 Automatic win/lose detection
 
-- Graphical user interface using Tkinter
-- Random word selection from a predefined list
-- 12 turns to guess the word
-- Real-time feedback on guesses
-- Win/lose detection
-
-## Requirements
-
-- Python 3.11+
-- Tkinter (included with Python standard library)
-
-## How to Run
-
-1. Ensure Python 3.x is installed on your system.
-2. Navigate to the project directory.
-3. Run the game with: `python main.py`
+## Installation
+```bash
+git clone https://github.com/Emmanuel-Fasina/WordGuessGame.git
+cd WordGuessGame
+```
+Requires Python 3.11+ with Tkinter (included in most standard installs).
 
 ## How to Play
-
-1. The game selects a random word from the list: rainbow, computer, science, programming, python.
-2. Guess one letter at a time by typing it in the input field and clicking "Guess".
-3. Correct guesses reveal the letter in the word display.
+```bash
+python main.py
+```
+1. The game randomly selects a hidden word (e.g. from: `rainbow`, `computer`, `science`, `programming`, `python`).
+2. Type a single letter into the input field and click **Guess**.
+3. Correct guesses reveal that letter in the word display.
 4. Incorrect guesses reduce your remaining turns.
-5. Win by guessing all letters before running out of turns.
-6. Lose if you exhaust all 12 turns without guessing the word.
+5. Guess the full word before your turns run out to win.
 
 ## Game Rules
+- Only single alphabetic characters are accepted per guess.
+- Duplicate guesses of the same letter are not allowed.
+- The game ends — win or lose — and disables further guesses once decided.
 
-- Only single alphabetic characters are accepted.
-- Duplicate guesses are not allowed.
-- The game ends when you win or lose, disabling further guesses.
+## Project Structure
+```
+WordGuessGame/
+├── main.py       # Game logic and GUI
+└── README.md     # Project documentation
+```
 
-## Author
+## License
+This project was built for educational and learning purposes.
 
-Emmanuel
-
-Enjoy the game!
+---
+Built by [Emmanuel Fasina](https://github.com/Emmanuel-Fasina)
